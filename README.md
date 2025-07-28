@@ -5,6 +5,6 @@
 1. Клонировать репозиторий
 2. Запустить в Visual Studio 2022+ или через .NET CLI: поставить запуск через http
 3. Открыть Swagger UI: `http://localhost:5035/swagger`
-Формат файла
+Формат файла (создать txt файл)
 Яндекс.Директ:/ru
 Ревдинский рабочий:/ru/svrd/revda,/ru/svrd/pervik
