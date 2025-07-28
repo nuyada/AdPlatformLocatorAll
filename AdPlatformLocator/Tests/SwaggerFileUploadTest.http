@@ -1,0 +1,11 @@
+### Проверка загрузки файла через Swagger endpoint
+POST http://localhost:5033/api/advertising-platforms/load
+Content-Type: multipart/form-data; boundary=boundary123
+
+--boundary123
+Content-Disposition: form-data; name="file"; filename="test.txt"
+Content-Type: text/plain
+
+Яндекс.Директ:/ru
+Ревдинский рабочий:/ru/svrd/revda
+--boundary123-- 
