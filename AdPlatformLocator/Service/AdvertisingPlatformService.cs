@@ -6,7 +6,7 @@ namespace AdPlatformLocator.Service
     public class AdvertisingPlatformService : IAdvertisingPlatformService
     {
         private List<AdvertisingPlatform> _platforms = new();
-
+        //Поиск локаций с помощбю LINQ
         public List<string> GetPlatformsForLocation(string location)
         {
             return _platforms
@@ -17,7 +17,7 @@ namespace AdPlatformLocator.Service
         }
 
    
-
+        //Получение файла, считывание, обработка
         public async Task LoadPlatformsFromStreamAsync(Stream stream)
         {
             using var reader = new StreamReader(stream);

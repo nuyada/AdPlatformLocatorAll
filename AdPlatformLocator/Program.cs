@@ -14,10 +14,10 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
 
-    // Добавьте этот код для правильного отображения загрузки файлов
+    
     c.OperationFilter<FileUploadOperationFilter>();
 
-    // Включите XML-комментарии (если ещё не сделано)
+    
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);
